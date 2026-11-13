@@ -1,6 +1,6 @@
-# Install job research skills for AI chat
+# Install LinkedIn job search skills for AI chat
 
-Install Tau's six job research skills for AI chat, then optionally connect Tau Scout's LinkedIn job research MCP server for bounded vacancy discovery with your own Apify token.
+Install Tau's six LinkedIn job search skills for AI chat, then optionally connect Tau Scout's LinkedIn job search MCP server for bounded vacancy discovery with your own Apify token.
 
 ## What is supported
 
@@ -13,6 +13,10 @@ Start with `job-search-brief` and `job-research`, or install all six. Each works
 Use the [README's Codex walkthrough](../README.md#connect-to-codex-desktop). The user-level directory is `~/.agents/skills/`; each of the six skill directories belongs directly inside it. Preserve the `job-research/references/` directory. Codex's MCP connection is configured separately in settings or `~/.codex/config.toml` using the Scout repository's example.
 
 This repository contains instructions, not an installed MCP connection. Scout's executable must come from an installed `tau-job-scout` package. The initial manual exercise should verify both skill discovery and MCP tool discovery rather than silently substituting an operator test harness.
+
+## Claude Code
+
+See the [LinkedIn job search skill for Claude setup guide](claude-linkedin-job-search.md). It covers local skill folders and an optional Scout stdio connection using your own Apify token. **This route is documented from Anthropic's setup references; Tau has not completed end-to-end chat validation in Claude Code.** The recorded native manual exercises use Codex. This is not an installation claim for Claude web chat, Cowork or every Claude Desktop session.
 
 ## Scout is optional
 

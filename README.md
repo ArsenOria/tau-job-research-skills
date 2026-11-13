@@ -1,8 +1,8 @@
 <p align="center">
-  <a href="https://get-tau.com"><img src="assets/readme/skills-banner.svg" alt="Tau Skills — Job Research Skills for AI Chat" width="1200" /></a>
+  <a href="https://get-tau.com"><img src="assets/readme/skills-banner.svg" alt="Tau Skills — LinkedIn Job Search Skills" width="1200" /></a>
 </p>
 
-<h1 align="center">Tau Skills — Job Research Skills for AI Chat</h1>
+<h1 align="center">Tau Skills — LinkedIn Job Search Skills</h1>
 
 <p align="center"><strong>Turn your CV and search preferences into an evidence-based job shortlist.</strong></p>
 
@@ -24,11 +24,13 @@
   <a href="https://get-tau.com">Explore Tau</a>
 </p>
 
-Tau Skills provides six open-source **job research skills for AI chat**. Start with a CV and your preferences; finish with a shortlist that explains the evidence, gaps and unanswered questions.
+Tau Skills provides six open-source **LinkedIn job search skills** for an AI-assisted search: turn your CV into a focused brief, plan LinkedIn queries, research roles and compare the evidence in chat. Start with your preferences; finish with a shortlist that explains fit, gaps and unanswered questions.
 
-The optional [**Tau Scout — LinkedIn Job Research MCP**](https://github.com/ArsenOria/tau-linkedin-job-research-mcp) companion repository supplies a **LinkedIn job research MCP** server using **your own Apify account**. There is no Tau backend, Tau account or shared API key. A configured host assistant calls the tools and presents the results in chat; you do not run search commands or transfer reports between applications.
+The optional [**Tau Scout — LinkedIn Job Search MCP Server**](https://github.com/ArsenOria/tau-linkedin-job-research-mcp) companion repository supplies a **LinkedIn job search MCP server** using **your own Apify account**. There is no Tau backend, Tau account or shared API key. A configured host assistant calls the tools and presents the results in chat; you do not run search commands or transfer reports between applications.
 
-## How job research works in AI chat
+For a **Codex job search skill** workflow, use the [Codex chat guide](docs/codex-job-search-skill.md) and the installation steps below. Looking for a **LinkedIn job search skill for Claude**? The [Claude Code setup guide](docs/claude-linkedin-job-search.md) explains the local skill and optional Scout connection. **Tau's recorded end-to-end chat validation is in Codex; the Claude Code route has not yet been validated end to end.**
+
+## How LinkedIn job search works in chat
 
 | 1. Focus the search | 2. Research the roles | 3. Review the evidence |
 |---|---|---|
@@ -84,6 +86,12 @@ A subsequent [native Codex output review](docs/OUTPUT_QUALITY.md) used the insta
 The [Scout 0.2 native answer in Russian](docs/NATIVE_OUTPUT_V2_RU.md) repeats those profiles with experience, seniority, remote-country constraints, normalized skills and employer/publisher separation. All user interaction remains in the AI chat.
 
 Scout v0.3 additionally separates publication claims from collection time, distinguishes employer/publisher/recruiter/client identity and evaluates student-program relevance and education/placement requirements. Supply only evidenced student facts; unknown grades, study progress and placement permission remain unknown. Earlier output captures above remain historical; they do not establish current openings or v0.3 behavior.
+
+## Setup guides
+
+- [Codex job search skill: from CV to shortlist in chat](docs/codex-job-search-skill.md) — the host used in our recorded manual exercises.
+- [LinkedIn job search skill for Claude: Claude Code setup](docs/claude-linkedin-job-search.md) — instructions based on vendor documentation; Tau end-to-end validation is pending.
+- [Search positioning and competition evidence](docs/SEARCH_POSITIONING.md) — dated Google observations, demand proxies and their limits.
 
 ## Access and evidence
 
